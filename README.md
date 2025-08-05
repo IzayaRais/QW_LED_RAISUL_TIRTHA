@@ -73,7 +73,7 @@ Mesh was refined near quantum well and barrier interfaces to improve simulation 
 ---
 
 ![I-V Curve](/figure/IV%20Curve.bmp)
-![Emission Spectrum](figure/Optical%20Emmision%20Exp.bmp
+![Emission Spectrum](figure/Optical%20Emmision%20Exp.bmp)
 
 
 
