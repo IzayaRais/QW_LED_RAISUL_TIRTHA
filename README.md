@@ -1,38 +1,78 @@
-1. Introduction
-The purpose of this assignment is to simulate a Quantum Well (QW) Light Emitting Diode (LED) using the Silvaco ATLAS TCAD tool, based on an Al0.3Ga0.7As/GaAs heterostructure. The primary aim is to demonstrate understanding of quantum well optoelectronic devices by designing a device with group-specific parameters (M = 9, N = 9), simulating its electrical and optical characteristics, and comparing the peak emission wavelength with theoretical expectations.
+# Quantum Well LED Simulation using Silvaco ATLAS
 
-2. Objective
-•	To design a single quantum well LED using Al0.3Ga0.7As and GaAs
-•	To simulate the I-V characteristics and identify turn-on voltage
-•	Simulate the optical emission spectrum
-•	Determination of the peak emission wavelength
-•	Comparasion between simulated results with theoretical values
+**Military Institute of Science & Technology**  
+Department of Electrical Electronic and Communication Engineering  
 
-3. Device Structure and Parameters
-•	Quantum Well Material: GaAs
-•	Barrier Material: Al0.3Ga0.7As
-•	Quantum Well Thickness: 1M = 9 nm
-•	Barrier Thickness: 5N = 45 nm
-•	Doping:
-•	N-region: GaAs, n-type, 1e18 cm^-3
-•	P-region: GaAs, p-type, 1e19 cm^-3
-The layers were defined using region statements, and a mesh was created to provide finer resolution at the quantum well and barrier interfaces.
+**Course:** Optoelectronics [EECE-459]  
+**Assignment:** Demonstration of the basic structure and working principle of a Quantum Well (QW) LED using Silvaco ATLAS.  
 
-4. Workflow and Code Explanation
+**Submitted by:**  
+1. Anindya Chanda Tirtha — ID: 202216009  
+2. Md. Raisul Islam Ratul — ID: 202216049  
 
-Step 1: Mesh Definition
-Fine vertical mesh near active region for accurate quantum well/barrier resolution.
-Step 2: Layer Setup
-•	9 nm GaAs quantum well
-•	45 nm Al₀.₃Ga₀.₇As barriers on both sides
-Step 3: Electrodes & Doping
-Top/bottom contacts with optimized doping for carrier injection.
-Step 4: Model Settings
-Enable strain, polarization, recombination (SRH, Auger), optical transitions, and k·p quantum effects.
-Step 5: Simulation
-I–V sweep: 0 → 3.0 V, then jump to 4.0 V for optical analysis.
-Step 6: Optical Spectrum
-Electroluminescence simulated in GaAs IR range (~870 nm).
+**Instructor:** Lec Muhammed Zubair Rahman  
+**Submission Date:** 05 August 2025  
+
+---
+
+## 1. Introduction
+The purpose of this assignment is to simulate a **Quantum Well (QW) Light Emitting Diode (LED)** using the Silvaco ATLAS TCAD tool, based on an **Al₀.₃Ga₀.₇As/GaAs** heterostructure.  
+The aim is to:
+- Design the device with group-specific parameters.
+- Simulate electrical and optical characteristics.
+- Compare peak emission wavelength with theoretical expectations.
+
+---
+
+## 2. Objectives
+- Design a single quantum well LED using **Al₀.₃Ga₀.₇As** and **GaAs**.
+- Simulate the **I–V characteristics** and identify turn-on voltage.
+- Simulate the **optical emission spectrum**.
+- Determine the **peak emission wavelength**.
+- Compare simulated results with **theoretical values**.
+
+---
+
+## 3. Device Structure & Parameters
+
+| Parameter | Value |
+|-----------|-------|
+| Quantum Well Material | GaAs |
+| Barrier Material | Al₀.₃Ga₀.₇As |
+| Quantum Well Thickness | 9 nm |
+| Barrier Thickness | 45 nm |
+| N-region Doping | GaAs, n-type, 1e18 cm⁻³ |
+| P-region Doping | GaAs, p-type, 1e19 cm⁻³ |
+
+Mesh was refined near quantum well and barrier interfaces to improve simulation accuracy.
+
+---
+
+## 4. Workflow & Code Explanation
+
+1. **Mesh Definition**  
+   Fine vertical mesh near the active region for accurate resolution of the quantum well and barriers.
+
+2. **Layer Setup**  
+   - 9 nm GaAs quantum well  
+   - 45 nm Al₀.₃Ga₀.₇As barriers on both sides
+
+3. **Electrodes & Doping**  
+   Top and bottom contacts with optimized doping for carrier injection.
+
+4. **Model Settings**  
+   Enable strain, polarization, recombination (SRH, Auger), optical transitions, and **k·p** quantum effects.
+
+5. **Simulation**  
+   - I–V sweep: 0 V → 3.0 V  
+   - Jump to 4.0 V for optical analysis
+
+6. **Optical Spectrum**  
+   Simulated electroluminescence in **GaAs IR range (~870 nm)**.
+
+---
+
+## 5. ATLAS Simulation Code
 
 ```atlas
 go atlas
