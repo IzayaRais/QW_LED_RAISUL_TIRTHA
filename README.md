@@ -72,6 +72,10 @@ Mesh was refined near quantum well and barrier interfaces to improve simulation 
 
 ---
 
+![I-V Curve](figure/IV Curve.bmp)
+
+
+
 ## 5. ATLAS Simulation Code
 
 ```atlas
